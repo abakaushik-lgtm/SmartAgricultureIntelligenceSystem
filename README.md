@@ -1,6 +1,22 @@
-# AgriNexus AI
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1500937386664-56d159062255?auto=format&fit=crop&w=1200&h=350&q=80" alt="AgriNexus AI Banner" width="100%" style="border-radius: 12px; margin-bottom: 20px;" />
 
-AgriNexus AI is a full-stack Smart Agriculture Intelligence Platform for crop monitoring, disease detection, yield prediction, soil analysis, weather intelligence, real-time sensor simulation, admin analytics, and AI farming assistance.
+  # 🌱 AgriNexus AI
+
+  ### *Next-Generation Smart Agriculture Decision Support & Intelligence Engine*
+
+  [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
+  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+  [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com)
+
+  *Empowering modern growers with real-time sensor telemetry, AI-driven crop disease diagnostics, agronomic yield predictions, and weather-aware decision networks.*
+
+  ---
+  [Core Features](#core-features) • [Local Setup](#local-setup) • [Docker Compose](#docker) • [API Documentation](/docs/api/openapi.md)
+  ---
+</div>
 
 ## Stack
 
