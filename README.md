@@ -44,6 +44,49 @@ docker/         Docker Compose and Render deployment files
 docs/           API and database documentation
 ```
 
+## System Architecture
+
+```mermaid
+graph TD
+    %% Styling
+    classDef client fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#0369a1;
+    classDef backend fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#15803d;
+    classDef ai fill:#faf5ff,stroke:#9333ea,stroke-width:2px,color:#7e22ce;
+    classDef db fill:#fef2f2,stroke:#dc2626,stroke-width:2px,color:#b91c1c;
+
+    %% Nodes
+    subgraph Client [React TypeScript Web Portal]
+        UI["SaaS Dashboard & PWA <br/> (Framer Motion, Recharts)"]:::client
+        WS["WebSocket Telemetry Client"]:::client
+    end
+
+    subgraph Server [FastAPI REST & Real-time Server]
+        API["REST Endpoints <br/> (Auth, Soil, Yield, Weather, Chat)"]:::backend
+        Stream["WebSocket Stream Gateways <br/> (/ws/monitoring)"]:::backend
+    end
+
+    subgraph AI [AI/ML Intelligence Layer]
+        YOLO["YOLOv8 Plant Disease <br/> (OpenCV / PyTorch Inference)"]:::ai
+        Yield["scikit-learn Predictor <br/> (Yield forecasting model)"]:::ai
+        Rules["Agronomic Expert Rules <br/> (Soil health recommendation)"]:::ai
+    end
+
+    subgraph Data [Storage Layer]
+        Mongo[("MongoDB Database <br/> (Users, Reports, History)")]:::db
+    end
+
+    %% Connections
+    UI -->|HTTPS Requests| API
+    WS <-->|Full-Duplex WS| Stream
+    
+    API -->|Image Payload| YOLO
+    API -->|Acreage & Temp| Yield
+    API -->|NPK & Soil Health| Rules
+
+    API -->|Read/Write Documents| Mongo
+    Stream -->|Fetch Context| Mongo
+```
+
 ## Local Setup
 
 ```bash
