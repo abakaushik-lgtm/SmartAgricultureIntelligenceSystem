@@ -37,9 +37,12 @@
 ## Project Structure
 
 ```text
-frontend/       React TypeScript dashboard
+frontend/       React TypeScript dashboard & PWA
 backend/        FastAPI application and tests
-ai-models/      Training, preprocessing, evaluation, sample datasets
+data/           Data science datasets (CSV, streams)
+models/         Trained model weights & estimators (joblib, pt)
+notebooks/      Jupyter analytical research & experiments
+ai-models/      ML preprocessing, training, and evaluation scripts
 docker/         Docker Compose and Render deployment files
 docs/           API and database documentation
 ```
