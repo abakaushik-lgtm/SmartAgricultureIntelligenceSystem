@@ -18,6 +18,15 @@
   ---
 </div>
 
+## Features
+
+- 🌾 Crop Recommendation System
+- 🦠 Plant Disease Detection
+- 💧 Smart Irrigation Monitoring
+- 🌦 Weather Forecast Integration
+- 📊 Yield Prediction
+- 🤖 AI-powered Farmer Assistant
+
 ## Stack
 
 - Frontend: React, TypeScript, Tailwind CSS, Framer Motion, Recharts, Vite
