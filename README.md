@@ -90,6 +90,32 @@ graph TD
     Stream -->|Fetch Context| Mongo
 ```
 
+## Visual Showcase
+
+### 📊 SaaS Operations Command Center
+A modern, glassmorphic dark-mode dashboard providing real-time data stream insights and interactive telemetry tracking.
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?auto=format&fit=crop&w=1000&q=80" alt="AgriNexus AI Dashboard Mockup" width="90%" style="border-radius: 8px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.10);" />
+</div>
+
+### 🦠 AI-Driven Leaf Disease Scan
+Deep-learning computer vision scans leaf models to detect pathogens, output confidence scores, and recommend custom chemical or organic treatments.
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=1000&q=80" alt="YOLOv8 Plant Disease Inference scan" width="90%" style="border-radius: 8px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.10);" />
+</div>
+
+### 💧 Telemetry Sensors & Weather Intelligence
+Full-duplex WebSockets stream real-time soil moisture and gateway telemetry, coupled with 7-day predictive weather recommendation algorithms.
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1628157582853-a796fa650a6a?auto=format&fit=crop&w=1000&q=80" alt="IoT Field Telemetry Gateway" width="90%" style="border-radius: 8px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.10);" />
+</div>
+
+### 📊 Yield Forecasting & Crop Mapping
+Agronomic expert system rules and scikit-learn models predict yield margins using multispectral soil variables, regional databases, and historical trends.
+<div align="center">
+  <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1000&q=80" alt="Multispectral crop mapping and yield analytics" width="90%" style="border-radius: 8px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.10);" />
+</div>
+
 ## Local Setup
 
 ```bash
