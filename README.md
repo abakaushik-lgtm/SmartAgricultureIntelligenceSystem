@@ -27,12 +27,22 @@
 - 📊 Yield Prediction
 - 🤖 AI-powered Farmer Assistant
 
-## Stack
+## Technology Stack
 
-- Frontend: React, TypeScript, Tailwind CSS, Framer Motion, Recharts, Vite
-- Backend: FastAPI, WebSockets, JWT auth, role-based access, MongoDB, Redis-ready services
-- AI/ML: YOLOv8 disease detection inference, scikit-learn yield forecasting with trained model fallback, soil recommendation rules
-- Deployment: Docker, Docker Compose, GitHub Actions, Vercel config, Render blueprint
+The platform is engineered using modern, high-performance web frameworks, real-time data streaming architectures, and advanced machine learning models:
+
+| Layer | Technologies | Badges | Core Function & Integration |
+| :--- | :--- | :--- | :--- |
+| **Frontend UI** | React 18, TypeScript, Vite | [![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react)](https://react.dev) [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript)](https://typescript.org) | Asynchronous single-page dashboard with glassmorphic styling, responsive layout controls, and dark/light toggles. |
+| **Styling & Motion** | Tailwind CSS, Framer Motion | [![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css)](https://tailwindcss.com) [![Framer](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat&logo=framer)](https://framer.com) | Responsive utility-first layouts, custom thematic colors, smooth list enter/exit transitions, and micro-interactions. |
+| **Charts** | Recharts, Lucide Icons | [![Recharts](https://img.shields.io/badge/Recharts-22c55e?style=flat&logo=d3)](https://recharts.org) | Interactive time-series yield area charts, dynamic field health bar graphs, and customized SVG alert icons. |
+| **API Backend** | FastAPI, Uvicorn, Python 3.14 | [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)](https://fastapi.tiangolo.com) [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python)](https://python.org) | Modular, type-safe REST router layers utilizing Pydantic validation schemas, auto-generated Swagger docs, and CORS. |
+| **Realtime Telemetry** | WebSockets (Asynchronous) | [![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat&logo=socket.io)](https://fastapi.tiangolo.com) | Full-duplex connection gateways streaming simulated sensor gateway metrics (moisture, temperature) at 3s intervals. |
+| **Security** | JWT Tokens, Hashed Bcrypt | [![JWT](https://img.shields.io/badge/JWT-000000?style=flat&logo=json-web-tokens)](https://jwt.io) | Token-based stateless authentication flow with secure password salting, token expiration, and role-based endpoints. |
+| **Database** | MongoDB, Motor Client | [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb)](https://mongodb.com) | Document-oriented storage layer serving high-speed write speeds for sensor reports, user profiles, and chat logs. |
+| **AI / Computer Vision** | YOLOv8 (Ultralytics), OpenCV | [![YOLOv8](https://img.shields.io/badge/YOLOv8-OpenCV-blue?style=flat&logo=opencv)](https://opencv.org) | Leaf disease image classification and detection layer outputting pathogen confidence percentages and treatment advice. |
+| **AI / Analytics** | Scikit-Learn, Pandas, NumPy | [![Scikit](https://img.shields.io/badge/scikit_learn-F7931E?style=flat&logo=scikit-learn)](https://scikit-learn.org) | Machine learning yield forecasting regressions evaluating acreage parameters, moisture averages, and soil score models. |
+| **Infrastructure** | Docker, Github Actions | [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker)](https://docker.com) | Platform-agnostic deployment configurations including multi-stage Dockerfiles and CI build workflows. |
 
 ## Project Structure
 
