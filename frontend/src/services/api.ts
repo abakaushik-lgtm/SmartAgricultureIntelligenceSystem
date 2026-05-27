@@ -7,6 +7,7 @@ import type {
   TokenResponse,
   User,
   YieldPredictionResponse,
+  WeatherForecastResponse,
 } from "../types/api";
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000/api/v1";
@@ -59,6 +60,14 @@ export async function predictYield(): Promise<YieldPredictionResponse> {
     rainfall_mm: 820,
     avg_temperature_c: 27,
     soil_health_score: 78
+  });
+  return data;
+}
+
+export async function getWeatherForecast(location: string, days: number = 7): Promise<WeatherForecastResponse> {
+  const { data } = await api.post<WeatherForecastResponse>("/weather/forecast", {
+    location,
+    forecast_days: days
   });
   return data;
 }

@@ -70,3 +70,22 @@ export interface YieldPredictionResponse {
   confidence: number;
   drivers: string[];
 }
+
+export interface WeatherForecastRequest {
+  location: string;
+  forecast_days?: number;
+}
+
+export interface WeatherDayForecast {
+  date: string;
+  temperature_c: number;
+  rainfall_mm: number;
+  humidity: number;
+  rain_probability: number;
+}
+
+export interface WeatherForecastResponse {
+  location: string;
+  forecast: WeatherDayForecast[];
+  recommendations: string[];
+}
