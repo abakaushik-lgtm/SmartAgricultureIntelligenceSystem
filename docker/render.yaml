@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: agrinexus-ai-backend
+    env: docker
+    plan: starter
+    dockerfilePath: ./backend/Dockerfile
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true

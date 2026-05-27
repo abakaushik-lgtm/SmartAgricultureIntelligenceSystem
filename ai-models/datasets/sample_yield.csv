@@ -1,0 +1,9 @@
+crop,region,acreage,rainfall_mm,avg_temperature_c,soil_health_score,yield_tons
+rice,Punjab,10,820,27,78,42
+rice,Kerala,7,1100,29,84,34
+wheat,Punjab,12,510,22,72,38
+maize,Karnataka,8,620,26,69,29
+cotton,Gujarat,14,430,31,61,33
+rice,Odisha,9,980,28,80,39
+wheat,Haryana,11,480,21,75,36
+maize,Bihar,6,710,27,70,23

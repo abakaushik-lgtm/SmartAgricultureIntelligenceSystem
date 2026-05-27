@@ -1,0 +1,9 @@
+{
+  "name": "AgriNexus AI",
+  "short_name": "AgriNexus",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#166534",
+  "icons": []
+}
