@@ -126,31 +126,114 @@ Agronomic expert system rules and scikit-learn models predict yield margins usin
   <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1000&q=80" alt="Multispectral crop mapping and yield analytics" width="90%" style="border-radius: 8px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.10);" />
 </div>
 
-## Local Setup
+## 🚀 Installation Guide
+
+### Prerequisites
+
+| Requirement | Version | Purpose |
+| :--- | :--- | :--- |
+| **Python** | 3.10+ | Backend API runtime |
+| **Node.js** | 18+ | Frontend build toolchain |
+| **npm** | 9+ | Package management |
+| **MongoDB** | 6.0+ or Atlas | Document database |
+| **Git** | 2.x | Version control |
+| **Docker** *(optional)* | 24+ | Containerized deployment |
+
+### 1️⃣ Clone the Repository
 
 ```bash
-cd backend
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-uvicorn app.main:app --reload
+git clone https://github.com/abakaushik-lgtm/SmartAgricultureIntelligenceSystem.git
+cd SmartAgricultureIntelligenceSystem
 ```
 
+### 2️⃣ Backend Setup
+
 ```bash
-cd frontend
-npm install
+# Navigate to the backend directory
+cd backend
+
+# Create and activate a virtual environment
+python -m venv .venv
+
+# Windows
+.venv\Scripts\activate
+# macOS / Linux
+source .venv/bin/activate
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Configure environment variables
 cp .env.example .env
+# Edit .env with your MongoDB URI, API keys, and secrets (see table below)
+
+# Start the FastAPI development server
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+> 🟢 Backend API will be live at **http://localhost:8000**
+> 📖 Interactive Swagger docs at **http://localhost:8000/docs**
+
+### 3️⃣ Frontend Setup
+
+```bash
+# Navigate to the frontend directory (from project root)
+cd frontend
+
+# Install Node.js dependencies
+npm install
+
+# Configure environment variables
+cp .env.example .env
+# Set VITE_API_URL=http://localhost:8000
+
+# Start the Vite development server
 npm run dev
 ```
 
-## Docker
+> 🟢 Frontend dashboard will be live at **http://localhost:5173**
+
+### 4️⃣ Docker Compose (One-Command Setup)
+
+Spin up the entire stack with a single command:
 
 ```bash
 docker compose -f docker/docker-compose.yml up --build
 ```
 
-Frontend runs at `http://localhost:3000`, backend at `http://localhost:8000`, Swagger at `http://localhost:8000/docs`.
+| Service | URL |
+| :--- | :--- |
+| Frontend | http://localhost:3000 |
+| Backend API | http://localhost:8000 |
+| Swagger Docs | http://localhost:8000/docs |
+| MongoDB | localhost:27017 |
+
+### 🔐 Environment Variables
+
+| Variable | Required | Description |
+| :--- | :---: | :--- |
+| `MONGO_URI` | ✅ | MongoDB connection string (Atlas or local) |
+| `JWT_SECRET` | ✅ | Secret key for JWT token signing |
+| `JWT_ALGORITHM` | ✅ | Token algorithm (default: `HS256`) |
+| `WEATHER_API_KEY` | ⬜ | OpenWeatherMap API key for forecasts |
+| `DISEASE_MODEL_PATH` | ⬜ | Path to trained YOLOv8 `.pt` weights |
+| `OPENAI_API_KEY` | ⬜ | API key for AI chatbot integration |
+| `REDIS_URL` | ⬜ | Redis connection URL for caching |
+| `FIREBASE_CREDENTIALS` | ⬜ | Path to Firebase Admin SDK JSON |
+
+### 🧪 Running Tests
+
+```bash
+# Backend unit tests
+cd backend
+pytest -v
+
+# Frontend tests (if configured)
+cd frontend
+npm run test
+```
+
+---
 
 ## Core Features
 
@@ -165,6 +248,38 @@ Frontend runs at `http://localhost:3000`, backend at `http://localhost:8000`, Sw
 - Responsive SaaS dashboard with dark/light mode
 - PWA manifest, Dockerfiles, CI workflow, and deployment config
 
+---
+
+## 🔮 Future Enhancements
+
+> *Making agriculture smarter — one model at a time.*
+
+| Enhancement | Description | Status |
+| :--- | :--- | :---: |
+| 🛰️ **Satellite Image Analysis** | Integrate NDVI and multispectral satellite imagery for large-scale crop health monitoring using Sentinel-2 data | 🔬 Research |
+| 🚁 **Drone Monitoring** | Autonomous UAV flight path planning with real-time aerial imaging and anomaly detection | 📋 Planned |
+| 📡 **Real-time IoT Integration** | Connect physical IoT sensor gateways (ESP32, LoRa) for live soil moisture, temperature, and humidity telemetry | 📋 Planned |
+| 📱 **Mobile Application** | Cross-platform React Native mobile app with offline-first capabilities and push notifications for crop alerts | 📋 Planned |
+| 🌍 **Multilingual Farmer Chatbot** | AI-powered conversational assistant supporting Hindi, Telugu, Tamil, Punjabi, and 10+ regional Indian languages | 🔬 Research |
+| 🧬 **Crop Genome Analytics** | Predictive modeling for optimal seed variety selection based on soil composition and regional climate data | 🔬 Research |
+| 🏪 **Marketplace Integration** | Direct-to-consumer produce marketplace connecting farmers with buyers using dynamic pricing algorithms | 📋 Planned |
+| 📈 **Government Scheme Recommender** | AI engine that matches eligible farmers with central and state agricultural subsidy programs | 📋 Planned |
+
+---
+
 ## Production Notes
 
 Replace `.env.example` secrets before deployment. Use MongoDB Atlas for `MONGO_URI`, a managed Redis instance for cache/session workloads, Firebase Admin credentials for federated login, and object storage for uploaded disease images. Train YOLOv8 with a labeled plant disease dataset, then set `DISEASE_MODEL_PATH` to the exported weights.
+
+---
+
+<div align="center">
+
+  **Built with ❤️ for the future of agriculture**
+
+  [![GitHub Stars](https://img.shields.io/github/stars/abakaushik-lgtm/SmartAgricultureIntelligenceSystem?style=social)](https://github.com/abakaushik-lgtm/SmartAgricultureIntelligenceSystem)
+  [![GitHub Forks](https://img.shields.io/github/forks/abakaushik-lgtm/SmartAgricultureIntelligenceSystem?style=social)](https://github.com/abakaushik-lgtm/SmartAgricultureIntelligenceSystem/fork)
+
+  *If this project helped you, consider giving it a ⭐*
+
+</div>
