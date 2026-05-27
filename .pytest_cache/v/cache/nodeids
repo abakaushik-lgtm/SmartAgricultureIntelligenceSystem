@@ -1,0 +1,9 @@
+[
+  "backend/tests/test_fertilizer.py::test_recommend_fertilizer_prioritizes_nutrient_deficits",
+  "backend/tests/test_fertilizer.py::test_recommend_fertilizer_uses_maintenance_plan_for_balanced_soil",
+  "backend/tests/test_health.py::test_health_endpoint",
+  "backend/tests/test_health.py::test_root_endpoint",
+  "backend/tests/test_notifications.py::test_create_notification_stores_unread_document[asyncio]",
+  "backend/tests/test_notifications.py::test_soil_notification_skips_excellent_soil[asyncio]",
+  "backend/tests/test_security.py::test_password_hash_round_trip"
+]
