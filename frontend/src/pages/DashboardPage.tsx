@@ -34,7 +34,9 @@ export function DashboardPage() {
     let reconnectTimeout: any;
 
     function connectWS() {
-      socket = new WebSocket("ws://localhost:8000/ws/monitoring");
+      const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:";
+      const wsUrl = import.meta.env.VITE_WS_URL ?? `${wsProtocol}//${window.location.host}/ws/monitoring`;
+      socket = new WebSocket(wsUrl);
 
       socket.onopen = () => {
         setTelemetry((prev) => ({ ...prev, wsConnected: true }));
