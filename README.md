@@ -10,12 +10,19 @@
   <br />
 
   <!-- Tech Stack Badges -->
+  [![Python](https://img.shields.io/badge/Python_3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
   [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com)
   [![React](https://img.shields.io/badge/React_18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
   [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
   [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com)
-  [![Python](https://img.shields.io/badge/Python_3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
+
+  <br />
+
+  <!-- Status Badges -->
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/abakaushik-lgtm/SmartAgricultureIntelligenceSystem/blob/master/LICENSE)
+  [![Build Status](https://img.shields.io/github/actions/workflow/status/abakaushik-lgtm/SmartAgricultureIntelligenceSystem/ci.yml?branch=master&style=for-the-badge)](https://github.com/abakaushik-lgtm/SmartAgricultureIntelligenceSystem/actions)
+  [![Last Commit](https://img.shields.io/github/last-commit/abakaushik-lgtm/SmartAgricultureIntelligenceSystem?style=for-the-badge)](https://github.com/abakaushik-lgtm/SmartAgricultureIntelligenceSystem/commits/master)
 
 [![Live Deployment](https://img.shields.io/badge/Live_Demo-HarvestMind-16a34a?style=for-the-badge)](https://harvestmind-demo.vercel.app)
   <br />
