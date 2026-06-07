@@ -14,5 +14,5 @@ def test_root_endpoint():
     client = TestClient(app)
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json()["service"] == "AgriNexus AI"
+    assert response.json()["service"] == "HarvestMind"
     assert response.json()["docs"] == "/docs"

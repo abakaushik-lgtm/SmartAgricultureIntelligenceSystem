@@ -19,7 +19,7 @@ export function LandingPage() {
         <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="relative mx-auto w-full max-w-6xl">
           <div className="max-w-3xl">
             <p className="mb-4 inline-flex rounded-lg border border-white/20 px-3 py-1 text-sm text-green-100">AI farming intelligence for modern growers</p>
-            <h1 className="text-5xl font-semibold leading-tight sm:text-7xl">AgriNexus AI</h1>
+            <h1 className="text-5xl font-semibold leading-tight sm:text-7xl">HarvestMind</h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-200">
               Monitor crop health, detect disease, forecast yield, analyze soil, and coordinate weather-aware farm decisions from one industrial-grade platform.
             </p>

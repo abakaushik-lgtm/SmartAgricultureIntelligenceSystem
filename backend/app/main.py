@@ -65,7 +65,7 @@ async def root() -> dict:
         "docs": "/docs",
         "health": "/health",
         "api_base": settings.api_v1_prefix,
-        "message": "AgriNexus AI backend is running. Open /docs for Swagger API documentation.",
+        "message": "HarvestMind backend is running. Open /docs for Swagger API documentation.",
     }
 
 

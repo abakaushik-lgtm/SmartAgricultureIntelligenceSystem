@@ -1,4 +1,4 @@
-name: AgriNexus CI
+name: HarvestMind CI
 
 on:
   push:

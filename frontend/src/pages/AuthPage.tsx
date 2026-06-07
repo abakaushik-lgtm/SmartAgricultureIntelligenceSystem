@@ -36,7 +36,7 @@ export function AuthPage({ mode }: { mode: "login" | "signup" }) {
           <span className="grid h-11 w-11 place-items-center rounded-lg bg-field text-white"><Sprout /></span>
           <div>
             <h1 className="text-2xl font-semibold">{mode === "login" ? "Welcome back" : "Create farmer account"}</h1>
-            <p className="text-sm text-slate-500">AgriNexus AI secure access</p>
+            <p className="text-sm text-slate-500">HarvestMind secure access</p>
           </div>
         </div>
         {mode === "signup" && (

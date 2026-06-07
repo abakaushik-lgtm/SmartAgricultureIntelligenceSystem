@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: agrinexus-ai-backend
+    name: harvestmind-ai-backend
     env: docker
     plan: starter
     dockerfilePath: ./backend/Dockerfile

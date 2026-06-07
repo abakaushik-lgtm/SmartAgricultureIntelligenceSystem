@@ -8,7 +8,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8", extra="ignore")
 
-    app_name: str = "AgriNexus AI"
+    app_name: str = "HarvestMind"
     environment: str = "development"
     api_v1_prefix: str = "/api/v1"
     cors_origins: List[str] = Field(
@@ -16,7 +16,7 @@ class Settings(BaseSettings):
     )
 
     mongo_uri: str = "mongodb://localhost:27017"
-    mongo_db: str = "agrinexus"
+    mongo_db: str = "harvestmind"
     redis_url: str = "redis://localhost:6379/0"
 
     jwt_secret: str = "change-me-in-production"

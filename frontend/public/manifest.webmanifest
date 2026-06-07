@@ -1,6 +1,6 @@
 {
-  "name": "AgriNexus AI",
-  "short_name": "AgriNexus",
+  "name": "HarvestMind",
+  "short_name": "HarvestMind",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f8fafc",

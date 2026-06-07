@@ -9,4 +9,4 @@ async def answer_agriculture_question(payload: ChatRequest) -> ChatResponse:
     )
     if payload.language != "en":
         answer = f"[{payload.language}] {answer}"
-    return ChatResponse(answer=answer, sources=["AgriNexus agronomy rules", "Local weather and soil context"])
+    return ChatResponse(answer=answer, sources=["HarvestMind agronomy rules", "Local weather and soil context"])

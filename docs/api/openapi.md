@@ -1,4 +1,4 @@
-# AgriNexus AI API
+# HarvestMind API
 
 FastAPI exposes interactive documentation at:
 

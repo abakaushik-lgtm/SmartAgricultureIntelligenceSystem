@@ -34,7 +34,7 @@ export function Layout() {
       <aside className="fixed inset-y-0 left-0 hidden w-72 border-r border-slate-200 bg-white px-4 py-5 dark:border-slate-800 dark:bg-slate-950 lg:block">
         <Link to="/" className="flex items-center gap-3 px-2 text-xl font-semibold">
           <span className="grid h-10 w-10 place-items-center rounded-lg bg-field text-white"><Sprout size={22} /></span>
-          AgriNexus AI
+          HarvestMind
         </Link>
         <nav className="mt-8 space-y-1">
           {navItems.map(({ to, label, icon: Icon }) => (
@@ -61,7 +61,7 @@ export function Layout() {
             <div className="flex items-center justify-between">
               <Link to="/" className="flex items-center gap-3 text-lg font-semibold">
                 <span className="grid h-9 w-9 place-items-center rounded-lg bg-field text-white"><Sprout size={20} /></span>
-                AgriNexus AI
+                HarvestMind
               </Link>
               <button className="rounded-lg border border-slate-200 p-2 dark:border-slate-800" onClick={() => setMobileNavOpen(false)} aria-label="Close menu">×</button>
             </div>
